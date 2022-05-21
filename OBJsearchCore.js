@@ -24,19 +24,19 @@ var OBJ = {
             OLD = NEW
         }
         var length = Math.max(OLD.length,NEW.length)
-        
+            
 
         var NEW_pad = pad(NEW, length)
         var OLD_pad = pad(OLD, length)
         var offset = getDIff(NEW_pad,OLD_pad)
         offset*1
-        // console.log(getDIff(NEW_pad,OLD_pad),NEW,OLD,NEW_pad,OLD_pad)
 
-        for(i=0;i<length;i++){
-            console.log(getDIff(NEW_pad,OLD_pad),"/",i,length)
-            console.log(i+offset)
-        }
 
+        var i = getDIff(NEW_pad,OLD_pad)
+            while(i<length){
+                i++
+                console.log(i)
+            }
         return
     },
     init: function(){
